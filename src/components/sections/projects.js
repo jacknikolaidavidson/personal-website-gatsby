@@ -5,7 +5,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 import VisibilitySensor from "react-visibility-sensor"
 import { motion } from "framer-motion"
-
 import { useOnScreen } from "../../hooks"
 import Context from "../../context"
 import ContentWrapper from "../../styles/contentWrapper"
@@ -124,15 +123,15 @@ const StyledProject = styled(motion.div)`
     justify-content: space-between;
     flex-shrink: 1;
     max-width: 62.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     padding-right: 0;
-    /* Positioning of image and details should vary */
+    /* Positioning of image and details should vary put !==0 for alternating*/
     flex-direction: ${({ position }) =>
-      position % 2 !== 0 ? "row" : "row-reverse"};
+      position % 2 !== 2 ? "row" : "row-reverse"};
   }
   .details {
     width: 100%;
-    max-width: 25rem;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
@@ -147,7 +146,7 @@ const StyledProject = styled(motion.div)`
     }
     .title {
       margin-top: 0.625rem;
-      margin-bottom: 0.625rem;
+      margin-bottom: 0rem;
       font-size: 1.375rem;
       line-height: 1.625rem;
       font-weight: 700;
@@ -183,7 +182,7 @@ const StyledProject = styled(motion.div)`
     }
   }
   .screenshot {
-    width: 100%;
+    width: 0%; /*change this to 100 if you want sc */
     max-width: 25rem;
     height: 15rem;
     border-radius: ${({ theme }) => theme.borderRadius};

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImageDefault from "../../content/default.jpg"
+import ogImageDefault from "../../content/favicon-32x32.png"
 
 import { lightTheme } from "../styles/theme"
 
@@ -47,7 +47,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: ogImageUrl,
+          content: `https://live.staticflickr.com/65535/51285279310_a6ce863ecf_o.png`,
         },
         {
           property: `og:description`,

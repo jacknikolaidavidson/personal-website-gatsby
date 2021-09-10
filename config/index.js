@@ -1,14 +1,14 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
-  siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
+  author: "@jackdavidson",
+  siteTitle: "Jack Davidson Portfolio",
+  siteShortTitle: "jd.", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    "Jack Davidson Portfolio/Personal Website",
+  siteUrl: "https://jackdavidson.netlify.app",
   siteLanguage: "en_US",
-  siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  siteIcon: "favicon-32x32.png", // Relative to gatsby-config file
+  seoTitleSuffix: "Jack Davidson", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
   useCookieBar: false, // If you use Google Analytics and want to be GDPR-compliant, set it to true
   googleAnalyticsTrackingId: "", // e.g. UA-XXXXXX-X
 
@@ -40,7 +40,8 @@ module.exports = {
     },
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    //primary: "Roboto, Arial, sans-serif",
+    primary: "Open Sans, Open Sans (Body), Open Sans (Light)",
   },
 
   //-- ARTICLES SECTION SETTINGS -----
@@ -58,24 +59,24 @@ module.exports = {
   socialMedia: [
     {
       name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
-    },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
-    },
-    {
-      name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
-    },
-    {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
+      url: "https://www.linkedin.com/in/jacknikolaidavidson/",
     },
     // {
+    //   name: "Medium",
+    //   url: "",
+    // },
+    // {
+    //   name: "Github",
+    //   url:
+    //     "",
+    // },
+    // {
+    //   name: "Behance",
+    //   url: "",
+    // },
+    // {
     //   name: "Mail",
-    //   url: "mailto:mail@konstantin.digital",
+    //   url: "",
     // },
   ],
 
@@ -87,7 +88,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Experience",
         url: "/#projects",
       },
       {
@@ -98,18 +99,18 @@ module.exports = {
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "goldenpuppy.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "Jack_Davidson_Resume_29072021_censored_v2.pdf", // the file has to be placed inside the static folder at the root level
       url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
   footerLinks: [
     {
-      name: "Privacy",
+      name: "Credits",
       url: "/privacy",
     },
-    {
-      name: "Imprint",
-      url: "/imprint",
-    },
+    // {
+    //   name: "Imprint",
+    //   url: "/imprint",
+    // },
   ],
 }
